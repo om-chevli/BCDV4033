@@ -1,0 +1,11 @@
+name: Display Name
+
+on: push
+
+jobs:
+  display_name_job:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Display Name
+      run: echo "Om Yashraj Chevli"
