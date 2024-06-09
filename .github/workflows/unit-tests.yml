@@ -11,20 +11,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout Code
-      uses: actions/checkout@v2
+      - name: Checkout Code
+        uses: actions/checkout@v2
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: '16'
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "16"
 
-    - name: Install Dependencies
-      run: |
-        cd Lab1
-        npm install
+      - name: Install Dependencies
+        run: |
+          cd Lab1
+          npm install
 
-    - name: Run Jest Tests
-      run: |
-        cd Lab1
-        npm test
+      - name: Run Jest Tests
+        run: |
+          cd Lab1
+          npm test
