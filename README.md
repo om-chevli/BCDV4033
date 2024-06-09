@@ -9,7 +9,7 @@ This project uses GitHub Actions to automate the testing process. The unit test 
 ### Workflow Details
 
 - **Name**: Unit Test Workflow
-- **Trigger**: After the build process is completed.
+- **Trigger**: After the build process is completed..
 - **Steps**:
   - Checkout the code.
   - Set up Node.js.
