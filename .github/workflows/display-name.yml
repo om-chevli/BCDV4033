@@ -8,4 +8,4 @@ jobs:
 
     steps:
     - name: Display Name
-      run: echo "Om Yashraj Chevli"
+      run: echo "Your Name"
