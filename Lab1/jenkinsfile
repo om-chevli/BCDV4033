@@ -40,7 +40,7 @@ pipeline {
             archiveArtifacts artifacts: 'Lab1/build/**', allowEmptyArchive: true
         }
         failure {
-            mail to: 'your-email@gmail.com',
+            mail to: 'omchevli@gmail.com',
                  subject: "Build failed in Jenkins: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
                  body: "Build ${env.BUILD_NAME} failed. Check console output for details."
         }
