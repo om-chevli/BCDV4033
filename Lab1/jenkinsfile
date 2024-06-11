@@ -41,7 +41,7 @@ pipeline {
         }
         failure {
             mail to: 'omchevli@gmail.com',
-                 subject: "Build failed in Jenkins: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+                 subject: "Build failed Jenkins: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
                  body: "Build ${env.BUILD_NAME} failed. Check console output for details."
         }
     }
