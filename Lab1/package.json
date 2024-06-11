@@ -2,10 +2,18 @@
   "devDependencies": {
     "eslint": "^9.4.0",
     "globals": "^15.4.0",
-    "husky": "^9.0.11"
+    "husky": "^9.0.11",
+    "jest": "^29.7.0",
+    "@babel/core": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "babel-jest": "^29.7.0"
   },
   "scripts": {
     "prepare": "husky install",
+    "test": "jest",
     "build": "echo 'Build script executed'"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
   }
 }
