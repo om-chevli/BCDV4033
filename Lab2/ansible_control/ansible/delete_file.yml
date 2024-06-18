@@ -1,0 +1,8 @@
+---
+- name: Delete the file on remote nodes
+  hosts: remote_nodes
+  tasks:
+    - name: Delete the file
+      file:
+        path: /tmp/testfile
+        state: absent

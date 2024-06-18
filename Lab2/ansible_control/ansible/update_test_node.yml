@@ -1,0 +1,8 @@
+---
+- name: Update only the test node
+  hosts: test_group
+  tasks:
+    - name: Create a file on the test node
+      file:
+        path: /tmp/testnodefile
+        state: touch

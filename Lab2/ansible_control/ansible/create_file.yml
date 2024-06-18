@@ -1,0 +1,8 @@
+---
+- name: Create a file on remote nodes
+  hosts: remote_nodes
+  tasks:
+    - name: Create an empty file
+      file:
+        path: /tmp/testfile
+        state: touch

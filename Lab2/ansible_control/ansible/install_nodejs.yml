@@ -1,0 +1,13 @@
+---
+- name: Install Node.js on remote nodes
+  hosts: remote_nodes
+  tasks:
+    - name: Install Node.js
+      apt:
+        name: nodejs
+        state: present
+
+    - name: Install npm
+      apt:
+        name: npm
+        state: present

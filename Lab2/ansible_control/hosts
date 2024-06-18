@@ -1,0 +1,12 @@
+[remote_nodes]
+remote_node_1
+remote_node_2
+
+[test_group]
+remote_node_1
+[remote_nodes]
+remote_node_1
+remote_node_2
+
+[test_group]
+remote_node_1

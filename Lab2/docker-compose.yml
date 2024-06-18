@@ -1,0 +1,25 @@
+version: '3.8'
+services:
+  ansible_control:
+    container_name: ansible_control
+    build: ./ansible_control
+    volumes:
+      - ./ansible_control:/ansible
+    command: tail -f /dev/null
+    networks:
+      - ansible_network
+
+  remote_node_1:
+    container_name: remote_node_1
+    build: ./remote_node_1
+    networks:
+      - ansible_network
+
+  remote_node_2:
+    container_name: remote_node_2
+    build: ./remote_node_2
+    networks:
+      - ansible_network
+
+networks:
+  ansible_network:

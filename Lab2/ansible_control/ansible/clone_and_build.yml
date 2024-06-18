@@ -1,0 +1,19 @@
+---
+- name: Clone Lab 1 repo and build node modules
+  hosts: remote_nodes
+  tasks:
+    - name: Install git
+      apt:
+        name: git
+        state: present
+
+    - name: Clone Lab 1 repository
+      git:
+        repo: 'https://github.com/om-chevli/BCDV4033.git'
+        dest: /root/Lab1
+        version: master
+
+    - name: Install node modules
+      shell: npm install
+      args:
+        chdir: /root/Lab1/Lab1/
